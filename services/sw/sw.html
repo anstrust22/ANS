@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Read More Popup Box</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="sw.css" type="text/css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">  
+</head>
+<body>
+   <header class="header">
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+  
+      <a href="../../index.html" class="logo"> <span></span><img src="../../images/logo.png" alt="" style="height:50px; width:50px;">   ANS </a>
+  
+     <nav class="navbar">
+          <a href="../../index.html">home</a>
+          <a href="../../aboutus/aboutus.html">About Us</a>
+          <a href="../../services/services.html">services</a>
+          <a href="../../gallery/gallery.html">Gallery</a>
+          <a href="../../donate/donate.html">Donate</a>
+          <a href="../../upevents/upevents.html">Upcoming events</a>
+      </nav>
+  
+      <div id="login-btn">
+        <!--  <button class="btn">login</button> -->
+       <!--   <i class="far fa-user"></i> -->
+      </div>
+  
+  </header> 
+      
+  <div class="login-form-container">
+  
+      <span id="close-login-form" class="fas fa-times"></span>
+  
+      <form action="">
+          <h3>user login</h3>
+          <input type="email" placeholder="email" class="box">
+          <input type="password" placeholder="password" class="box">
+          <p> forget your password <a href="#">click here</a> </p>
+          <input type="submit" value="login" class="btn">
+          <p>or login with</p>
+          <div class="buttons">
+              <a href="#" class="btn"> google </a>
+              <a href="#" class="btn"> facebook </a>
+          </div>
+          <p> don't have an account <a href="#">create one</a> </p>
+      </form>
+       
+  </div>
+ 
+ <section class="services">
+    <div class="container">
+       <div class="row">
+           <div class="section-title">
+             <h1>Society Welfare</h1>
+           </div>
+       </div>
+       <div class="row">
+          <div class="service-items">
+              <div class="row">
+                 <!-- item start -->
+                 <div class="item">
+                    <div class="item-inner">
+                       <h3>Serve Happiness</h3>
+                       <p>Celebrations are much more fun when you've got people to share with. ANS charitable Trust helps you to donate food & exigency to the needy.The trust ensures to provide not only the donation but also the love you gift them..</p>
+                       <div class="read-more-cont">
+                        <img src="swimages/serve poster.png" alt="img">
+                        
+                         
+
+                       </div>
+                       <button class="btn" type="button">Read More</button>
+                    </div>
+                 </div>
+                 <!-- item end -->
+                 <!-- item start -->
+                 <div class="item">
+                    <div class="item-inner">
+                       <h3>Happy Home</h3>
+                       <p>The  basic needs of a common man are rightfully described as 'Roti, Kapda, Makan'
+                        Many labours & BPLs fail to build themselves a permanent roof. ANS aims to build as many possible houses for such painstaking individuals.. </p>
+                       <div class="read-more-cont">
+                         <img src="swimages/HAPPY HOME.png" alt="img">
+                         
+                       </div>
+                       <button class="btn" type="button">Read More</button>
+                    </div>
+                 </div>
+                 <!-- item end -->
+                 <!-- item start -->
+                 <div class="item">
+                    <div class="item-inner">
+                       <h3>Student Scholarship</h3>
+                       <p>Funding education is also a part of welfare. We appreciate registrations and verify academically excellent students who are genuine and determined towards their future at the same time need financial push..</p>
+                       <div class="read-more-cont">
+                          <img src="swimages/scholarship.png" alt="img">
+
+                       </div>
+                       <button class="btn" type="button">Read More</button>
+                    </div>
+                 </div>
+                 <!-- item end -->
+                  <!-- item start -->
+                  <div class="item">
+                     <div class="item-inner">
+                        <h3>Widow Pension</h3>
+                        <p>We are happy to announce our new pension scheme, specially for widowed women. The trust immensely believes in growth of each & every community & wishes to support women empowerment through this initiative.. </p>
+                        <div class="read-more-cont">
+                           <img src="swimages/widow poster.png" alt="img">
+                          
+                        </div>
+                        <button class="btn" type="button">Read More</button>
+                     </div>
+                  </div>
+                  <!-- item end -->
+
+              </div>
+          </div>
+       </div>
+    </div>
+ </section>
+
+  <!-- read more popup box start -->
+   <div class="popup-box">
+      <div class="popup-content">
+          <div class="popup-header">
+             <h3></h3>
+             <span class="popup-close-icon">&times;</span>
+          </div>
+          <div class="popup-body">
+            
+          </div>
+          <div class="popup-footer">
+            <button class="btn popup-close-btn">Close</button>
+          </div>
+      </div>
+   </div>
+  <!-- read more popup box end -->
+
+
+<script src="sw.js"></script>
+</body>
+</html>

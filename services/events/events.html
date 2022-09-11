@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Read More Popup Box</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="events.css" type="text/css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">  
+</head>
+<body>
+   <header class="header">
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+  
+      <a href="../../index.html" class="logo"> <span></span><img src="../../images/logo.png" alt="" style="height:50px; width:50px;">   ANS </a>
+  
+     <nav class="navbar">
+          <a href="../../index.html">home</a>
+          <a href="../../aboutus/aboutus.html">About Us</a>
+          <a href="../../services/services.html">services</a>
+          <a href="../../gallery/gallery.html">Gallery</a>
+          <a href="../../donate/donate.html">Donate</a>
+          <a href="../../upevents/upevents.html">Upcoming events</a>
+      </nav>
+  
+      <div id="login-btn">
+      <!--    <button class="btn">login</button> --> 
+       <!--    <i class="far fa-user"></i>--> 
+      </div>
+  
+  </header> 
+      
+  <div class="login-form-container">
+  
+      <span id="close-login-form" class="fas fa-times"></span>
+  
+      <form action="">
+          <h3>user login</h3>
+          <input type="email" placeholder="email" class="box">
+          <input type="password" placeholder="password" class="box">
+          <p> forget your password <a href="#">click here</a> </p>
+          <input type="submit" value="login" class="btn">
+          <p>or login with</p>
+          <div class="buttons">
+              <a href="#" class="btn"> google </a>
+              <a href="#" class="btn"> facebook </a>
+          </div>
+          <p> don't have an account <a href="#">create one</a> </p>
+      </form>
+       
+  </div>
+ <section class="services">
+    <div class="container">
+       <div class="row">
+           <div class="section-title">
+           
+              <h1>Events</h1>
+           </div>
+       </div>
+       <div class="row">
+          <div class="service-items">
+              <div class="row">
+                 <!-- item start -->
+                 <div class="item">
+                    <div class="item-inner">
+                       <h3>Marathons</h3>
+                       <p>Join us healthy champs.</p>
+                       <div class="read-more-cont">
+                          <p>  </p>
+                         
+                       </div>
+                       <button class="btn" type="button">Read More</button>
+                    </div>
+                 </div>
+                 <!-- item end -->
+                 <!-- item start -->
+                 <div class="item">
+                    <div class="item-inner">
+                       <h3>Fitnova</h3>
+                       <p>An annual function conducted to bring together trainees from all over India to compete in different virtual competitions.</p>
+                       <div class="read-more-cont">
+                         <p>  </p>
+                        
+                       </div>
+                       <button class="btn" type="button">Read More</button>
+                    </div>
+                 </div>
+                 <!-- item end -->
+                
+              </div>
+          </div>
+       </div>
+    </div>
+ </section>
+
+  <!-- read more popup box start -->
+   <div class="popup-box">
+      <div class="popup-content">
+          <div class="popup-header">
+             <h3></h3>
+             <span class="popup-close-icon">&times;</span>
+          </div>
+          <div class="popup-body">
+            <p></p>
+          </div>
+          <div class="popup-footer">
+            <button class="btn popup-close-btn">Close</button>
+          </div>
+      </div>
+   </div>
+  <!-- read more popup box end -->
+
+
+<script src="events.js"></script>
+</body>
+</html>

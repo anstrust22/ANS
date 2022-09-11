@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Opportunities</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+	<link rel="stylesheet" type="text/css" href="Intern.css">
+  <link rel="html" href="ContactUs.html">
+</head>	 
+<body> 
+
+  <div class="contact-section">
+    <div class="contact-info">
+      <img src="png.jpg" >
+    </div>
+  <div class="contact-form">
+    <h2>Training Form</h2>
+    <form class="contact" action="javascript:SendMailToken()" method="post">
+      <input type="text" id="Name1" name="Name1" class="text-box" placeholder="Your Name" required>
+      <input type="email"  id="Email" name="Email" class="text-box" placeholder="Your Email" required>
+  
+      <textarea name="Message1" id="Message1" rows="5" placeholder="In Which Topic Of Session You Expect From Us? " required></textarea>
+      
+      <button id="button " type="submit" name="submit" class="send-btn" value="Send">Send</button>
+    </form>
+
+  </div>
+
+</div>
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+ 
+}
+
+.contact-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    flex-direction: column;
+  }
+  
+  .contact-info img{
+ margin-left: -1%;
+ width:400px;
+  }
+  
+  
+  
+  .contact-form{
+    max-width: 700px;
+    
+  }
+  
+  .contact-info, .contact-form{
+    flex: 1;
+    margin: 30px 50px;
+  }
+  
+  .contact-form {
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+ 
+  }
+  .contact-form h2{
+      color:#fe3838;
+      font-size: 30px;
+  }
+  
+  .contact-form .text-box{
+    background: #000;
+    color: #fff;
+    border: none;
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+  }
+  .contact-form select{
+    background: #000;
+    color: #fff;
+    border: none;
+    width: calc(50% - 10px);
+    height: 50px;
+   
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+    box-sizing:100%;
+        padding: 20px;
+  }
+  
+  .contact-form .text-box:first-child{
+    margin-right: 15px;
+  }
+  
+  .contact-form textarea{
+    background: #000;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+  }
+  
+  .contact-form .send-btn{
+    float: right;
+    background: #fe3838;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: background;
+  }
+  
+  .contact-form .send-btn:hover{
+    background: #fe3838;
+  }
+  
+  @media screen and (max-width: 950px){
+    .contact-section{
+      flex-direction: column;
+    
+    }
+ 
+  .contact-info img{
+      width:100%;
+  }
+    .contact-info, .contact-form{
+      margin: 30px 50px;
+    }
+ 
+  
+    .contact-form h2{
+      font-size: 30px;
+    }
+  
+    .contact-form .text-box{
+      width: 100%;
+    }
+    .contact-form.select{
+        box-sizing:100%;
+        padding: 20px;
+    }
+  }
+  
+ 
+</style><script
+src="https://code.jquery.com/jquery-2.2.4.min.js"
+integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+crossorigin="anonymous"></script>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script >
+    
+
+function SendMailToken()
+{
+var name11=$('#Name1').val();
+var email11=$('#Email').val();
+var message111=$('#Message1').val();
+var select11=$('#select1').val();
+var Body2='Name1: '+name11+'<br>Email: '+email11+'<br>Neeki Mam, I want Session on topic  : '+message111+'<br>'+select11;
+
+
+Email.send({
+  SecureToken:"62d4aaa0-b78e-46f2-a597-880d65aebf4e",
+  To : 'ans.empower@gmail.com',
+  From : "anscharitabletrust@gmail.com",
+  Subject : "New mail on contact form "+name11,
+  Body:Body2
+}).then(
+message => {
+  if(message=='OK') 
+  {
+    alert('Thank You!! Your Response Submitted Successfully!');
+  }
+  else{
+    console.error(message);
+    alert('error')
+  }
+}
+);
+}
+
+</script>
+</body>

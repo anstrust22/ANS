@@ -1,0 +1,43 @@
+/* colors
+ #ED1C5B; light 
+ #E20E4E; dark
+*/
+
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+   
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main Content Section Start Here  */
+
+.main{
+    margin-top: 12vh;
+    /*margin-left: 200px;*/
+    padding: 5px 10px;
+   
+    font-size: 1.7rem;
+}
+
+.main h2{
+    margin-top: 30px;
+}
+
+#Mission
+ {
+  align-self: flex-end;
+  text-align: right;
+}
+
+#Founder
+ {
+  align-self: flex-end;
+  text-align: right;
+}
