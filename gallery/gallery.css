@@ -11,11 +11,18 @@ body{
     background-color: aliceblue;
     font-family: "source sans pro", sans-serif;
 }
-
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: aliceblue; /* Match your body background */
+}
 .image-gallery{
     width: 100%;
     max-width: 950px;
-    margin: 0 auto;
+    margin: 60px auto 0 auto;
     padding: 50px 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
