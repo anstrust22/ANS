@@ -10,6 +10,52 @@
     display: grid;
     place-items: center;
   }
+  /* Add fixed header and space for content */
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: white; /* or your preferred color */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.services {
+    margin-top: 120px; /* Adjust based on your header height */
+    min-height: calc(100vh - 80px - 100px); /* viewport - header - footer */
+    padding-bottom: 100px; /* Space for footer */
+}
+
+/* Fix footer positioning */
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Adjust card spacing */
+.card {
+    margin-bottom: 20px;
+}
+
+/* Mobile specific fixes */
+@media (max-width: 768px) {
+    .services {
+        margin-top: 100px; /* Smaller header space on mobile */
+        min-height: calc(100vh - 60px - 150px); /* Adjust for mobile */
+        padding-bottom: 150px; /* More space for footer on mobile */
+    }
+    
+    .column {
+        padding: 0 0.5em 0.5em 0.5em; /* Reduce padding on mobile */
+    }
+    
+    .card {
+        padding: 1.5em 1em; /* Reduce card padding on mobile */
+    }
+}
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -88,3 +134,31 @@
     }
   }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.services {
+    flex: 1;
+    height: auto;
+    min-height: auto;
+    padding-bottom: 20px;
+}
+
+.footer {
+    position: relative;
+    background: white;
+    z-index: 10;
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+    .services {
+        padding-bottom: 20px;
+    }
+    .footer {
+        padding-top: 20px;
+    }
+}
