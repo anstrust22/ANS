@@ -30,6 +30,7 @@ html{
     width: 100%;
     padding: 2rem;
     box-sizing: border-box;
+    margin: 100px auto 0 auto;
 }
 
 .donation-images img {
